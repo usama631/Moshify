@@ -4,6 +4,7 @@
   --color-accent: #ff3400;
   --color-heading: #1b0760;
   --color-body: #918ca4;
+  --color-icon-back: #f3f9fa;
 }
 
 /*Typography*/
@@ -143,4 +144,22 @@ a {
   .list--tick .list__item {
     padding-left: 0;
   }
+}
+
+/* Icons */
+.icon {
+  height: 40px;
+  width: 40px;
+}
+.icon--primary {
+  fill: var(--color-primary);
+}
+.icon-container {
+  background: var(--color-icon-back);
+  height: 74px;
+  width: 74px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
