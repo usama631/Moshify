@@ -5,6 +5,8 @@
   --color-heading: #1b0760;
   --color-body: #918ca4;
   --color-icon-back: #f3f9fa;
+  --color-border: #ccc;
+  --border-radius: 30px;
 }
 
 *,
@@ -153,6 +155,9 @@ a {
 }
 
 /* Icons */
+/*Here Single Hyphen(-) .icon--primary(represents skin) & 
+Double Hyphen(--) .icon-container(represents structure) 
+for coding practice.*/
 .icon {
   height: 40px;
   width: 40px;
@@ -227,5 +232,39 @@ a {
 @media screen and (min-width: 1080px) {
   .btn {
     font-size: 1.4rem;
+  }
+}
+
+/* Inputs */
+
+.input {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  color: var(--color-heading);
+  font-size: 2rem;
+  outline: 0;
+  padding: 1.5rem 4rem;
+}
+::placeholder {
+  color: #cdcbd7;
+}
+
+.input-group {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  display: flex;
+}
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  padding: 1.5rem 1rem;
+}
+.input-group .btn {
+  margin: 4px;
+}
+
+@media screen and (min-width: 1080px) {
+  .input {
+    font-size: 1.5rem;
   }
 }

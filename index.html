@@ -18,18 +18,25 @@
     <!--Trick : h${heading  $}*3  Result: Create 3 heading with 3 sizes(h1,h2,h3)-->
     <!--Trick: ul.list>li{item $}*3 Result: Result: Create 3 unordered list-->
     <!-- 'CTRL+ALT+UP' / 'CTRL+ALT+DOWN' to select multiple cursors -->
-    <button class="btn btn--primary btn--block">Buy Now</button>
-    <button class="btn btn--secondary btn--block">Buy Now</button>
-    <button class="btn btn--accent btn--block">Buy Now</button>
-    <button class="btn btn--outline btn--block">Buy Now</button>
-
-    <a href="#" class="btn btn--primary btn--block">buy now</a>
-
-    <button class="btn btn--primary">Buy Now</button>
-    <button class="btn btn--secondary">Buy Now</button>
-    <button class="btn btn--accent">Buy Now</button>
-    <button class="btn btn--outline">Buy Now</button>
-
-    <a href="#" class="btn btn--primary">buy now</a>
+    <div class="input-group">
+      <input
+        type="text"
+        class="input"
+        placeholder="Enter The Domain Name Here..."
+      />
+      <button class="btn btn--accent">Search</button>
+    </div>
+    <div class="input-group">
+      <span class="icon-container">
+        <svg class="icon icon--primary">
+          <use xlink:href="images/sprite.svg#wordpress"></use>
+        </svg>
+      </span>
+      <input
+        type="text"
+        class="input"
+        placeholder="Enter The Domain Name Here..."
+      />
+    </div>
   </body>
 </html>
