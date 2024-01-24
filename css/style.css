@@ -268,3 +268,26 @@ for coding practice.*/
     font-size: 1.5rem;
   }
 }
+
+/* Cards */
+/*in Box-Shadow: Horizontal Offset - Vertical Offset - Blurring and softnening - Range of Shadow*/
+.card {
+  border-radius: 7px;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  overflow: hidden;
+}
+.card__header,
+.card__body {
+  padding: 2rem 3rem;
+}
+
+/*If we have a class ".card--primary" then 
+".card__header" should be:*/
+.card--primary .card__header {
+  background: var(--color-primary);
+  color: #fff;
+}
+.card--secondary .card__header {
+  background: var(--color-secondary);
+  color: #fff;
+}
