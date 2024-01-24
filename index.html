@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/normalize.css" />
@@ -18,25 +18,25 @@
     <!--Trick : h${heading  $}*3  Result: Create 3 heading with 3 sizes(h1,h2,h3)-->
     <!--Trick: ul.list>li{item $}*3 Result: Result: Create 3 unordered list-->
     <!-- 'CTRL+ALT+UP' / 'CTRL+ALT+DOWN' to select multiple cursors -->
-    <div style="width: 25%; padding: 2rem">
-      <div class="card card--primary">
-        <header class="card__header">Card Header</header>
-        <div class="card__body">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, expedita
-          laboriosam molestias animi sequi rem, vitae libero voluptatum dolore
-          cum eaque et in rerum adipisci ipsum sapiente quo explicabo
-          temporibus.
-        </div>
-      </div>
-    </div>
-    <div style="width: 25%; padding: 2rem">
-      <div class="card card--secondary">
-        <header class="card__header">Card Header</header>
-        <div class="card__body">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, expedita
-          laboriosam molestias animi sequi rem, vitae libero voluptatum dolore
-          cum eaque et in rerum adipisci ipsum sapiente quo explicabo
-          temporibus.
+    <div style="width: 40%; padding: 4rem">
+      <div class="plan">
+        <div class="card card--secondary">
+          <header class="card__header">
+            <h3 class="plan__name">Entry</h3>
+            <span class="plan__price">$14</span>
+            <span class="plan__billing-cycle">/month</span>
+            <span class="badge badge--secondary badge--small">10% OFF</span>
+            <span class="plan__description">Easy start on the cloud.</span>
+          </header>
+          <div class="card__body">
+            <ul class="list list--tick">
+              <li class="list__item">Unlimited Websites</li>
+              <li class="list__item">Unlimited Bandwidth</li>
+              <li class="list__item">100 GB SSD Storage</li>
+              <li class="list__item">3 GB RAM</li>
+            </ul>
+            <button class="btn btn--outline btn--block">Buy Now</button>
+          </div>
         </div>
       </div>
     </div>
