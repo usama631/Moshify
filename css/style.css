@@ -413,3 +413,14 @@ postion element.*/
     bottom: 1.9rem;
   }
 }
+
+/* Grids */
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 1080px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
