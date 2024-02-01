@@ -14,15 +14,46 @@
 
     <title>Document</title>
   </head>
-  <body>
+  <body style="padding: 5rem">
     <!--Trick : h${heading  $}*3  Result: Create 3 heading with 3 sizes(h1,h2,h3)-->
     <!--Trick: ul.list>li{item $}*3 Result: Result: Create 3 unordered list-->
     <!-- 'CTRL+ALT+UP' / 'CTRL+ALT+DOWN' to select multiple cursors -->
 
-    <div class="grid grid--1x3">
-      <div style="height: 100px; background: gold"></div>
-      <div style="height: 100px; background: dodgerblue"></div>
-      <div style="height: 100px; background: darkorange"></div>
+    <div class="card testimonial">
+      <div class="grid grid--1x2">
+        <div class="testimonial__image">
+          <img src="images/testimonial.jpg" alt="A happy, smiling customer." />
+          <span class="icon-container icon-container--accent">
+            <svg class="icon icon--white icon-small">
+              <use xlink:href="images/sprite.svg#quotes"></use>
+            </svg>
+          </span>
+        </div>
+
+        <div>
+          <blockquote class="quote">
+            <p class="quote__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iure
+              vitae blanditiis ipsam mollitia maiores libero amet eligendi
+              voluptatibus qui itaque aliquam dicta numquam, quasi nisi,
+              exercitationem reprehenderit perspiciatis. Quae.
+            </p>
+            <footer>
+              <div class="media quote__icon">
+                <div class="media__image">
+                  <svg class="icon icon--primary quote__line">
+                    <use xlink:href="images/sprite.svg#line"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title quote__author">Jhone Lumeo</h3>
+                  <p class="quote__organization">Mosh Company ceo</p>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
     </div>
   </body>
 </html>
