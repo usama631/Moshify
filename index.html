@@ -14,22 +14,44 @@
 
     <title>Document</title>
   </head>
-  <body style="padding: 5rem">
+  <body>
     <!--Trick : h${heading  $}*3  Result: Create 3 heading with 3 sizes(h1,h2,h3)-->
     <!--Trick: ul.list>li{item $}*3 Result: Result: Create 3 unordered list-->
     <!-- 'CTRL+ALT+UP' / 'CTRL+ALT+DOWN' to select multiple cursors -->
-    <div class="callout callout--primary">
-      <div class="grid grid--1x2">
-        <div class="callout-content">
-          <h2 class="callout__heading">Ready To Get Started?</h2>
-          <p class="callout__body">
-            Choose the hosting provider that helps you start easy, build fast,
-            and grow strong! It's risk-free with our 14-day money back
-            guarantee.
-          </p>
+    <!-- 'SHIFT+ALT+UP' / 'SHIFT+ALT+DOWN' to copy code above/below the selected code -->
+
+    <section class="block container">
+      <header class="block__header">
+        <h2 class="block__heading">Heading 2</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          perferendis repudiandae iure doloremque ratione non officiis
+          distinctio odit deleniti voluptate?
+        </p>
+      </header>
+      <!--Card Primary-->
+      <div style="width: 25%; padding: 2rem">
+        <div class="card card--primary">
+          <header class="card__header">Card Header</header>
+          <div class="card__body">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptas, quod.
+            </p>
+          </div>
         </div>
-        <a href="" class="btn btn--secondary btn-stretched">Get started</a>
       </div>
-    </div>
+    </section>
+
+    <section class="block block--dark block--skewed-left">
+      <div class="container">
+        <h2 class="block__heading">Heading 2</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          perferendis repudiandae iure doloremque ratione non officiis
+          distinctio odit deleniti voluptate?
+        </p>
+      </div>
+    </section>
   </body>
 </html>

@@ -502,3 +502,41 @@ postion element.*/
     grid-template-columns: 1fr auto;
   }
 }
+
+/* Blocks */
+
+/* Like in root space which is globally available
+to all elements, we can also define variable in 
+the following type of particular element/role.*/
+.block {
+  --padding-vertical: 6rem; /* This custom property will be available to "block" & all of its chiildren*/
+  padding: var(--padding-vertical) 4rem;
+}
+.block__header {
+  text-align: center;
+}
+.block__heading {
+  margin-top: 0;
+}
+.block--dark {
+  background: #000;
+  color: #7b857b;
+}
+
+.block--dark .block__heading {
+  color: #fff;
+}
+
+.block--skewed-right {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+.block--skewed-left {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
