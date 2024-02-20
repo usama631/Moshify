@@ -36,6 +36,7 @@ h2,
 h3 {
   color: var(--color-heading);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 h1 {
   font-size: 7rem;
@@ -202,7 +203,7 @@ for coding practice.*/
   white-space: nowrap;
 }
 
-.btn-stretched {
+.btn--stretched {
   padding-left: 6rem;
   padding-right: 6rem;
 }
@@ -498,8 +499,11 @@ postion element.*/
     justify-self: start;
     margin: 0 2rem;
   }
-  .grid--1x2 {
+  .callout .grid--1x2 {
     grid-template-columns: 1fr auto;
+    /*This means that there will be two rows, 2nd row will take space 
+    according to its content & the rest width will be assigned to first
+    row in addition to its 1fr width size. */
   }
 }
 
@@ -537,7 +541,7 @@ postion element.*/
 to all elements, we can also define variable in 
 the following type of particular element/role.*/
 .block {
-  --padding-vertical: 6rem; /* This custom property will be available to "block" & all of its chiildren*/
+  --padding-vertical: 6rem; /* This custom property will be available to "block" & all of its children*/
   padding: var(--padding-vertical) 4rem;
 }
 .block__header {
@@ -561,6 +565,7 @@ the following type of particular element/role.*/
 }
 .block--skewed-left {
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  /*Top left,Top right,Bottom Right,Bottom left*/
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 
@@ -625,5 +630,29 @@ the following type of particular element/role.*/
   }
   .nav__item {
     border-bottom: 0;
+  }
+}
+
+/* Hero Component */
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+.hero__tagline {
+  font-size: 2rem;
+  color: #b2d1f8;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+.hero__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+  .hero__content {
+    text-align: left;
+    align-self: center;
   }
 }
