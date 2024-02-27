@@ -197,10 +197,18 @@ for coding practice.*/
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
+  outline: 0;
   padding: 2rem 3rem;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+.btn .icon {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 
 .btn--stretched {
@@ -275,7 +283,7 @@ for coding practice.*/
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 .input-group .btn {
   margin: 4px;
@@ -654,5 +662,31 @@ the following type of particular element/role.*/
   .hero__content {
     text-align: left;
     align-self: center;
+  }
+}
+
+/*Block Domain*/
+
+.block-domain .input-group {
+  box-shadow: 0 0 30px 10px #e6ebee;
+  border: 0;
+  margin: 4rem auto;
+  max-width: 690px;
+}
+
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  font-size: 2rem;
+  font-weight: 600;
+  justify-items: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
   }
 }
