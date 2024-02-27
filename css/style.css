@@ -317,11 +317,17 @@ for coding practice.*/
   background: var(--color-secondary);
   color: #fff;
 }
+.card--primary .badge--primary {
+  background: #126de1;
+}
 .card--secondary .badge--secondary {
   background: #02cdf1;
 }
 
 /* Plans */
+.plan {
+  transition: transform 0.2s ease-out;
+}
 .plan__name {
   font-size: 2.4rem;
   color: #fff;
@@ -350,6 +356,10 @@ for coding practice.*/
   font-weight: 500;
 }
 
+.plan--popular {
+  transform: scale(1.1);
+}
+
 .plan--popular .card__header {
   position: relative;
 }
@@ -363,6 +373,13 @@ postion element.*/
   position: absolute;
   top: -6px;
   right: 5%;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+.plan--popular:hover {
+  transform: scale(1.15);
 }
 
 @media screen and (min-width: 1080px) {
@@ -446,6 +463,12 @@ postion element.*/
 @media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -689,4 +712,15 @@ the following type of particular element/role.*/
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
   }
+}
+
+/* Plans Block */
+
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.block-plans .grid {
+  gap: 8rem 4rem;
 }
