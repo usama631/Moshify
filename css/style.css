@@ -582,6 +582,7 @@ the following type of particular element/role.*/
 }
 .block__header {
   text-align: center;
+  margin-bottom: 4rem;
 }
 .block__heading {
   margin-top: 0;
